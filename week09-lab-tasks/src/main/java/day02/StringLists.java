@@ -9,7 +9,7 @@ public class StringLists {
         int minimum = 1000;
         for(String s: words){
             if(s.length() < minimum){
-                modifiedList.removeAll(modifiedList);
+                modifiedList.clear();
                 modifiedList.add(s);
                 minimum = s.length();
             }else if(s.length() == minimum) {
